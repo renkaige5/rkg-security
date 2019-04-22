@@ -8,7 +8,7 @@ import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.imooc.service.HelloService;
+import com.rkg.service.HelloService;
 
 /**
  * @author zhailiang

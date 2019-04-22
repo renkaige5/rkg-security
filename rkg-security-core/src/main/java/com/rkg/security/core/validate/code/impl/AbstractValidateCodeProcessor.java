@@ -13,11 +13,11 @@ import org.springframework.web.bind.ServletRequestBindingException;
 import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.context.request.ServletWebRequest;
 
-import com.imooc.security.core.validate.code.ValidateCode;
-import com.imooc.security.core.validate.code.ValidateCodeException;
-import com.imooc.security.core.validate.code.ValidateCodeGenerator;
-import com.imooc.security.core.validate.code.ValidateCodeProcessor;
-import com.imooc.security.core.validate.code.ValidateCodeType;
+import com.rkg.security.core.validate.code.ValidateCode;
+import com.rkg.security.core.validate.code.ValidateCodeException;
+import com.rkg.security.core.validate.code.ValidateCodeGenerator;
+import com.rkg.security.core.validate.code.ValidateCodeProcessor;
+import com.rkg.security.core.validate.code.ValidateCodeType;
 
 /**
  * @author zhailiang
@@ -39,7 +39,7 @@ public abstract class AbstractValidateCodeProcessor<C extends ValidateCode> impl
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * com.imooc.security.core.validate.code.ValidateCodeProcessor#create(org.
+	 * com.rkg.security.core.validate.code.ValidateCodeProcessor#create(org.
 	 * springframework.web.context.request.ServletWebRequest)
 	 */
 	@Override

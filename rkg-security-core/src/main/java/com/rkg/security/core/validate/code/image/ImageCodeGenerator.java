@@ -3,18 +3,15 @@
  */
 package com.rkg.security.core.validate.code.image;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.image.BufferedImage;
-import java.util.Random;
-
+import com.rkg.security.core.properties.SecurityProperties;
+import com.rkg.security.core.validate.code.ValidateCodeGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.context.request.ServletWebRequest;
 
-import com.imooc.security.core.properties.SecurityProperties;
-import com.imooc.security.core.validate.code.ValidateCodeGenerator;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.util.Random;
 
 /**
  * @author zhailiang
@@ -32,7 +29,7 @@ public class ImageCodeGenerator implements ValidateCodeGenerator {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * com.imooc.security.core.validate.code.ValidateCodeGenerator#generate(org.
+	 * com.rkg.security.core.validate.code.ValidateCodeGenerator#generate(org.
 	 * springframework.web.context.request.ServletWebRequest)
 	 */
 	@Override

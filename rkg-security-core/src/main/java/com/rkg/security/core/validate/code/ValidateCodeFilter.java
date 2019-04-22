@@ -22,8 +22,8 @@ import org.springframework.util.AntPathMatcher;
 import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.imooc.security.core.properties.SecurityConstants;
-import com.imooc.security.core.properties.SecurityProperties;
+import com.rkg.security.core.properties.SecurityConstants;
+import com.rkg.security.core.properties.SecurityProperties;
 
 /**
  * @author zhailiang

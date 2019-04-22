@@ -8,7 +8,7 @@ import javax.imageio.ImageIO;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.ServletWebRequest;
 
-import com.imooc.security.core.validate.code.impl.AbstractValidateCodeProcessor;
+import com.rkg.security.core.validate.code.impl.AbstractValidateCodeProcessor;
 
 /**
  * 图片验证码处理器

@@ -7,8 +7,8 @@ import org.springframework.social.connect.ApiAdapter;
 import org.springframework.social.connect.ConnectionValues;
 import org.springframework.social.connect.UserProfile;
 
-import com.imooc.security.core.social.qq.api.QQ;
-import com.imooc.security.core.social.qq.api.QQUserInfo;
+import com.rkg.security.core.social.qq.api.QQ;
+import com.rkg.security.core.social.qq.api.QQUserInfo;
 
 /**
  * @author zhailiang

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.ServletWebRequest;
 
-import com.imooc.security.core.properties.SecurityConstants;
+import com.rkg.security.core.properties.SecurityConstants;
 
 /**
  * @author zhailiang

@@ -5,7 +5,7 @@ package com.rkg.service.impl;
 
 import org.springframework.stereotype.Service;
 
-import com.imooc.service.HelloService;
+import com.rkg.service.HelloService;
 
 /**
  * @author zhailiang
@@ -15,7 +15,7 @@ import com.imooc.service.HelloService;
 public class HelloServiceImpl implements HelloService {
 
 	/* (non-Javadoc)
-	 * @see com.imooc.service.HelloService#greeting(java.lang.String)
+	 * @see com.rkg.service.HelloService#greeting(java.lang.String)
 	 */
 	@Override
 	public String greeting(String name) {

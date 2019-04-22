@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.imooc.dto.FileInfo;
+import com.rkg.dto.FileInfo;
 
 /**
  * @author zhailiang
@@ -30,7 +30,7 @@ import com.imooc.dto.FileInfo;
 @RequestMapping("/file")
 public class FileController {
 
-	private String folder = "/Users/zhailiang/Documents/my/muke/inaction/java/workspace/github/imooc-security-demo/src/main/java/com/imooc/web/controller";
+	private String folder = "/Users/zhailiang/Documents/my/muke/inaction/java/workspace/github/rkg-security-demo/src/main/java/com/rkg/web/controller";
 
 	@PostMapping
 	public FileInfo upload(MultipartFile file) throws Exception {

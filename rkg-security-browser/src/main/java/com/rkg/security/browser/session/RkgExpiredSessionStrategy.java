@@ -3,20 +3,19 @@
  */
 package com.rkg.security.browser.session;
 
-import java.io.IOException;
-
-import javax.servlet.ServletException;
-
 import org.springframework.security.web.session.SessionInformationExpiredEvent;
 import org.springframework.security.web.session.SessionInformationExpiredStrategy;
+
+import javax.servlet.ServletException;
+import java.io.IOException;
 
 /**
  * @author zhailiang
  *
  */
-public class ImoocExpiredSessionStrategy extends AbstractSessionStrategy implements SessionInformationExpiredStrategy {
+public class RkgExpiredSessionStrategy extends AbstractSessionStrategy implements SessionInformationExpiredStrategy {
 
-	public ImoocExpiredSessionStrategy(String invalidSessionUrl) {
+	public RkgExpiredSessionStrategy(String invalidSessionUrl) {
 		super(invalidSessionUrl);
 	}
 

@@ -9,7 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @author zhailiang
  *
  */
-@ConfigurationProperties(prefix = "imooc.security")
+@ConfigurationProperties(prefix = "rkg.security")
 public class SecurityProperties {
 	
 	private BrowserProperties browser = new BrowserProperties();

@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.ServletWebRequest;
 
-import com.imooc.security.core.properties.SecurityProperties;
-import com.imooc.security.core.validate.code.ValidateCode;
-import com.imooc.security.core.validate.code.ValidateCodeGenerator;
+import com.rkg.security.core.properties.SecurityProperties;
+import com.rkg.security.core.validate.code.ValidateCode;
+import com.rkg.security.core.validate.code.ValidateCodeGenerator;
 
 /**
  * @author zhailiang
@@ -26,7 +26,7 @@ public class SmsCodeGenerator implements ValidateCodeGenerator {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * com.imooc.security.core.validate.code.ValidateCodeGenerator#generate(org.
+	 * com.rkg.security.core.validate.code.ValidateCodeGenerator#generate(org.
 	 * springframework.web.context.request.ServletWebRequest)
 	 */
 	@Override

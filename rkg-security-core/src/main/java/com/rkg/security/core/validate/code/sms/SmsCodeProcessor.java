@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.context.request.ServletWebRequest;
 
-import com.imooc.security.core.properties.SecurityConstants;
-import com.imooc.security.core.validate.code.ValidateCode;
-import com.imooc.security.core.validate.code.impl.AbstractValidateCodeProcessor;
+import com.rkg.security.core.properties.SecurityConstants;
+import com.rkg.security.core.validate.code.ValidateCode;
+import com.rkg.security.core.validate.code.impl.AbstractValidateCodeProcessor;
 
 /**
  * 短信验证码处理器

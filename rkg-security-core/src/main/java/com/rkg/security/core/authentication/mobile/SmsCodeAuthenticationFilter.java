@@ -13,7 +13,7 @@ import org.springframework.security.web.authentication.AbstractAuthenticationPro
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.util.Assert;
 
-import com.imooc.security.core.properties.SecurityConstants;
+import com.rkg.security.core.properties.SecurityConstants;
 
 /**
  * @author zhailiang

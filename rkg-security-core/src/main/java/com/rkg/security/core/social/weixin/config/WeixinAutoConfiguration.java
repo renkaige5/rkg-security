@@ -12,10 +12,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.social.connect.ConnectionFactory;
 import org.springframework.web.servlet.View;
 
-import com.imooc.security.core.properties.SecurityProperties;
-import com.imooc.security.core.properties.WeixinProperties;
-import com.imooc.security.core.social.ImoocConnectView;
-import com.imooc.security.core.social.weixin.connect.WeixinConnectionFactory;
+import com.rkg.security.core.properties.SecurityProperties;
+import com.rkg.security.core.properties.WeixinProperties;
+import com.rkg.security.core.social.RkgConnectView;
+import com.rkg.security.core.social.weixin.connect.WeixinConnectionFactory;
 
 /**
  * 微信登录配置
@@ -24,7 +24,7 @@ import com.imooc.security.core.social.weixin.connect.WeixinConnectionFactory;
  *
  */
 @Configuration
-@ConditionalOnProperty(prefix = "imooc.security.social.weixin", name = "app-id")
+@ConditionalOnProperty(prefix = "rkg.security.social.weixin", name = "app-id")
 public class WeixinAutoConfiguration extends SocialAutoConfigurerAdapter {
 
 	@Autowired
@@ -47,7 +47,7 @@ public class WeixinAutoConfiguration extends SocialAutoConfigurerAdapter {
 	@Bean({"connect/weixinConnect", "connect/weixinConnected"})
 	@ConditionalOnMissingBean(name = "weixinConnectedView")
 	public View weixinConnectedView() {
-		return new ImoocConnectView();
+		return new RkgConnectView();
 	}
 	
 }

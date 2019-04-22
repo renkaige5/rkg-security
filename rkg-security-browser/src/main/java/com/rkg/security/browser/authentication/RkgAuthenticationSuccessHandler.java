@@ -24,8 +24,8 @@ import com.rkg.security.core.properties.SecurityProperties;
  * @author zhailiang
  *
  */
-@Component("imoocAuthenticationSuccessHandler")
-public class ImoocAuthenticationSuccessHandler extends SavedRequestAwareAuthenticationSuccessHandler {
+@Component("rkgAuthenticationSuccessHandler")
+public class RkgAuthenticationSuccessHandler extends SavedRequestAwareAuthenticationSuccessHandler {
 
 	private Logger logger = LoggerFactory.getLogger(getClass());
 

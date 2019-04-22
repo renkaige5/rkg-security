@@ -47,7 +47,7 @@ public class BrowserSecurityConfig extends AbstractChannelSecurityConfig {
 	private ValidateCodeSecurityConfig validateCodeSecurityConfig;
 	
 	@Autowired
-	private SpringSocialConfigurer imoocSocialSecurityConfig;
+	private SpringSocialConfigurer rkgSocialSecurityConfig;
 	
 	@Autowired
 	private SessionInformationExpiredStrategy sessionInformationExpiredStrategy;
@@ -64,7 +64,7 @@ public class BrowserSecurityConfig extends AbstractChannelSecurityConfig {
 				.and()
 			.apply(smsCodeAuthenticationSecurityConfig)
 				.and()
-			.apply(imoocSocialSecurityConfig)
+			.apply(rkgSocialSecurityConfig)
 				.and()
 			.rememberMe()
 				.tokenRepository(persistentTokenRepository())

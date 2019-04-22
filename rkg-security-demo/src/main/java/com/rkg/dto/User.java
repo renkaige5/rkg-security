@@ -3,16 +3,13 @@
  */
 package com.rkg.dto;
 
-import java.util.Date;
-
-import javax.validation.constraints.Past;
-
+import com.fasterxml.jackson.annotation.JsonView;
+import com.rkg.validator.MyConstraint;
+import io.swagger.annotations.ApiModelProperty;
 import org.hibernate.validator.constraints.NotBlank;
 
-import com.fasterxml.jackson.annotation.JsonView;
-import com.imooc.validator.MyConstraint;
-
-import io.swagger.annotations.ApiModelProperty;
+import javax.validation.constraints.Past;
+import java.util.Date;
 
 /**
  * @author zhailiang

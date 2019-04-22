@@ -3,8 +3,7 @@
  */
 package com.rkg.security.core.social;
 
-import javax.sql.DataSource;
-
+import com.rkg.security.core.properties.SecurityProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +17,7 @@ import org.springframework.social.connect.jdbc.JdbcUsersConnectionRepository;
 import org.springframework.social.connect.web.ProviderSignInUtils;
 import org.springframework.social.security.SpringSocialConfigurer;
 
-import com.imooc.security.core.properties.SecurityProperties;
+import javax.sql.DataSource;
 
 /**
  * @author zhailiang
@@ -41,7 +40,7 @@ public class SocialConfig extends SocialConfigurerAdapter {
 	public UsersConnectionRepository getUsersConnectionRepository(ConnectionFactoryLocator connectionFactoryLocator) {
 		JdbcUsersConnectionRepository repository = new JdbcUsersConnectionRepository(dataSource,
 				connectionFactoryLocator, Encryptors.noOpText());
-		repository.setTablePrefix("imooc_");
+		repository.setTablePrefix("rkg_");
 		if(connectionSignUp != null) {
 			repository.setConnectionSignUp(connectionSignUp);
 		}
@@ -49,9 +48,9 @@ public class SocialConfig extends SocialConfigurerAdapter {
 	}
 
 	@Bean
-	public SpringSocialConfigurer imoocSocialSecurityConfig() {
+	public SpringSocialConfigurer rkgSocialSecurityConfig() {
 		String filterProcessesUrl = securityProperties.getSocial().getFilterProcessesUrl();
-		ImoocSpringSocialConfigurer configurer = new ImoocSpringSocialConfigurer(filterProcessesUrl);
+		RkgSpringSocialConfigurer configurer = new RkgSpringSocialConfigurer(filterProcessesUrl);
 		configurer.signupUrl(securityProperties.getBrowser().getSignUpUrl());
 		return configurer;
 	}

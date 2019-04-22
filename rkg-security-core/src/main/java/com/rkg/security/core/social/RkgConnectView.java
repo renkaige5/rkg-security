@@ -3,18 +3,17 @@
  */
 package com.rkg.security.core.social;
 
-import java.util.Map;
+import org.springframework.web.servlet.view.AbstractView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.springframework.web.servlet.view.AbstractView;
+import java.util.Map;
 
 /**
  * @author zhailiang
  *
  */
-public class ImoocConnectView extends AbstractView {
+public class RkgConnectView extends AbstractView {
 
 	/*
 	 * (non-Javadoc)

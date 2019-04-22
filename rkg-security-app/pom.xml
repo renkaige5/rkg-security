@@ -16,6 +16,7 @@
             <artifactId>rkg-security-core</artifactId>
             <version>${rkg.security.version}</version>
         </dependency>
+
     </dependencies>
 
 </project>

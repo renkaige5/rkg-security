@@ -29,8 +29,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.ServletWebRequest;
 
 import com.fasterxml.jackson.annotation.JsonView;
-import com.imooc.dto.User;
-import com.imooc.dto.UserQueryCondition;
+import com.rkg.dto.User;
+import com.rkg.dto.UserQueryCondition;
 
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;

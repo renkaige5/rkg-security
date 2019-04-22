@@ -12,8 +12,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-import com.imooc.web.filter.TimeFilter;
-import com.imooc.web.interceptor.TimeInterceptor;
+import com.rkg.web.filter.TimeFilter;
+import com.rkg.web.interceptor.TimeInterceptor;
 
 /**
  * @author zhailiang

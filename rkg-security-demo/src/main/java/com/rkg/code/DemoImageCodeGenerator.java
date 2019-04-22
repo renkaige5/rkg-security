@@ -16,7 +16,7 @@ import org.springframework.web.context.request.ServletWebRequest;
 public class DemoImageCodeGenerator implements ValidateCodeGenerator {
 
 	/* (non-Javadoc)
-	 * @see com.imooc.security.core.validate.code.ValidateCodeGenerator#generate(org.springframework.web.context.request.ServletWebRequest)
+	 * @see com.rkg.security.core.validate.code.ValidateCodeGenerator#generate(org.springframework.web.context.request.ServletWebRequest)
 	 */
 	@Override
 	public ImageCode generate(ServletWebRequest request) {

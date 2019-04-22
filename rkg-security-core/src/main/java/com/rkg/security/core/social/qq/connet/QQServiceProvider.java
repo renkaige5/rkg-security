@@ -5,8 +5,8 @@ package com.rkg.security.core.social.qq.connet;
 
 import org.springframework.social.oauth2.AbstractOAuth2ServiceProvider;
 
-import com.imooc.security.core.social.qq.api.QQ;
-import com.imooc.security.core.social.qq.api.QQImpl;
+import com.rkg.security.core.social.qq.api.QQ;
+import com.rkg.security.core.social.qq.api.QQImpl;
 
 /**
  * @author zhailiang

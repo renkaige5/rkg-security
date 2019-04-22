@@ -3,7 +3,7 @@
  */
 package com.rkg.security.core.validate.code;
 
-import com.imooc.security.core.properties.SecurityConstants;
+import com.rkg.security.core.properties.SecurityConstants;
 
 /**
  * @author zhailiang

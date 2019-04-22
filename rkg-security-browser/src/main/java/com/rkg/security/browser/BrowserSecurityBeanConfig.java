@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.web.session.InvalidSessionStrategy;
 import org.springframework.security.web.session.SessionInformationExpiredStrategy;
 
-import com.rkg.security.browser.session.ImoocExpiredSessionStrategy;
-import com.rkg.security.browser.session.ImoocInvalidSessionStrategy;
+import com.rkg.security.browser.session.RkgExpiredSessionStrategy;
+import com.rkg.security.browser.session.RkgInvalidSessionStrategy;
 import com.rkg.security.core.properties.SecurityProperties;
 
 /**
@@ -27,13 +27,13 @@ public class BrowserSecurityBeanConfig {
 	@Bean
 	@ConditionalOnMissingBean(InvalidSessionStrategy.class)
 	public InvalidSessionStrategy invalidSessionStrategy(){
-		return new ImoocInvalidSessionStrategy(securityProperties.getBrowser().getSession().getSessionInvalidUrl());
+		return new RkgInvalidSessionStrategy(securityProperties.getBrowser().getSession().getSessionInvalidUrl());
 	}
 	
 	@Bean
 	@ConditionalOnMissingBean(SessionInformationExpiredStrategy.class)
 	public SessionInformationExpiredStrategy sessionInformationExpiredStrategy(){
-		return new ImoocExpiredSessionStrategy(securityProperties.getBrowser().getSession().getSessionInvalidUrl());
+		return new RkgExpiredSessionStrategy(securityProperties.getBrowser().getSession().getSessionInvalidUrl());
 	}
 	
 }

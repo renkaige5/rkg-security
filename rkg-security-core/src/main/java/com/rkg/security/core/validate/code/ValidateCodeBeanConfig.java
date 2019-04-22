@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.imooc.security.core.properties.SecurityProperties;
-import com.imooc.security.core.validate.code.image.ImageCodeGenerator;
-import com.imooc.security.core.validate.code.sms.DefaultSmsCodeSender;
-import com.imooc.security.core.validate.code.sms.SmsCodeSender;
+import com.rkg.security.core.properties.SecurityProperties;
+import com.rkg.security.core.validate.code.image.ImageCodeGenerator;
+import com.rkg.security.core.validate.code.sms.DefaultSmsCodeSender;
+import com.rkg.security.core.validate.code.sms.SmsCodeSender;
 
 /**
  * @author zhailiang

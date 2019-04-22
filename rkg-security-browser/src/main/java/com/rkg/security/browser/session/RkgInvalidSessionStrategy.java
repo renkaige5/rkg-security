@@ -3,21 +3,20 @@
  */
 package com.rkg.security.browser.session;
 
-import java.io.IOException;
+import org.springframework.security.web.session.InvalidSessionStrategy;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.springframework.security.web.session.InvalidSessionStrategy;
+import java.io.IOException;
 
 /**
  * @author zhailiang
  *
  */
-public class ImoocInvalidSessionStrategy extends AbstractSessionStrategy implements InvalidSessionStrategy {
+public class RkgInvalidSessionStrategy extends AbstractSessionStrategy implements InvalidSessionStrategy {
 
-	public ImoocInvalidSessionStrategy(String invalidSessionUrl) {
+	public RkgInvalidSessionStrategy(String invalidSessionUrl) {
 		super(invalidSessionUrl);
 	}
 

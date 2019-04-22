@@ -5,8 +5,8 @@ package com.rkg.security.core.social.weixin.connect;
 
 import org.springframework.social.oauth2.AbstractOAuth2ServiceProvider;
 
-import com.imooc.security.core.social.weixin.api.Weixin;
-import com.imooc.security.core.social.weixin.api.WeixinImpl;
+import com.rkg.security.core.social.weixin.api.Weixin;
+import com.rkg.security.core.social.weixin.api.WeixinImpl;
 
 /**
  * 

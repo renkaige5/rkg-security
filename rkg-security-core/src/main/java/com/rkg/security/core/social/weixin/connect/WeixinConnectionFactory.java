@@ -11,7 +11,7 @@ import org.springframework.social.connect.support.OAuth2ConnectionFactory;
 import org.springframework.social.oauth2.AccessGrant;
 import org.springframework.social.oauth2.OAuth2ServiceProvider;
 
-import com.imooc.security.core.social.weixin.api.Weixin;
+import com.rkg.security.core.social.weixin.api.Weixin;
 
 /**
  * 微信连接工厂
